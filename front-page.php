@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 <div class="main container white-box" id="content white-box top-space">
-    
-    
+
+
     <div class="row">
-        
-        
-            
-       
-        
+
+
+
+
+
         <div class="twelve columns">
             <?php
                 if(have_posts()) :
@@ -28,8 +28,7 @@
             </div>
         </div>
     </div>
-   
 
-               
+
+
                 <?php get_footer(); ?>
-            
