@@ -2,6 +2,7 @@
 //adds new css-files
 function wpt_theme_styles(){
     wp_enqueue_style( 'skeleton_css', get_template_directory_uri() . '/css/skeleton.css');
+    wp_enqueue_style( 'style-new', get_template_directory_uri() . '/css/style-new.css');
 
 }
 
