@@ -27,7 +27,7 @@
 
                 </div>
         </nav>
-            
+
 
 
 
@@ -41,11 +41,22 @@
                 }?>-->
 
 
-             <a href="http://berglundscykel.se"><h1 id="logo"><?php
-                 wp_title('|', true, 'right');
-                 bloginfo('name');
+                <?php if ( get_theme_mod( 'logo' ) ) : ?>
+            <a href="<?php bloginfo('wpurl'); ?>">
+                <h1 style="background-image:url('<?php echo get_theme_mod( 'logo' ); ?>');" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" id="logo">
 
-             ?></h1><h2><?php bloginfo('description'); ?></h2></a>
+                        <?php bloginfo( 'name' ); ?>
+                </h1>
+            </a>
+
+        <?php else : ?>
+
+            <a href="<?php bloginfo('wpurl'); ?>">
+                <h1>
+                    <?php bloginfo( 'name' ); ?></h1>
+            </a>
+
+        <?php endif; ?>
 
 
     </div>

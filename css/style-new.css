@@ -22,6 +22,21 @@
   font-family: Fog;
   src: url(../fonts/Foglihten-068.otf); }
 
+header #logo {
+  text-indent: -999rem;
+  padding: 0;
+  background-size: cover;
+  margin-top: 5px;
+  margin-left: 20px;
+  width: 150px;
+  height: 58px;
+  margin-bottom: 0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s; }
+
+header h1 {
+  float: left; }
+
 /*MEDIA QUERIES */
 /* Larger than mobile */
 /* Larger than tablet (also point when grid becomes active) */
