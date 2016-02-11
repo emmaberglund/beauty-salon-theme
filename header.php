@@ -17,35 +17,11 @@
 
 <body>
     <header>
-        <div id="header-image">
-            <nav class="main-nav">
-                <?php wp_nav_menu([
-
-                    'theme_location' => 'primary'
-
-                ]); ?>
-
-                </div>
-        </nav>
-
-
-
-
-
-            <!--<h1><a href="<//?php echo home_url();?>"><//?php bloginfo('name');?></a></h1>
-            <h5><//?php bloginfo('description');?></h5>
-
-                <//?php if(is_page('about-2')){
-                    echo "This is conditional logic that works for specific pages";
-
-                }?>-->
-
-
-                <?php if ( get_theme_mod( 'logo' ) ) : ?>
+        <?php if ( get_theme_mod( 'logo' ) ) : ?>
             <a href="<?php bloginfo('wpurl'); ?>">
                 <h1 style="background-image:url('<?php echo get_theme_mod( 'logo' ); ?>');" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" id="logo">
 
-                        <?php bloginfo( 'name' ); ?>
+                    <?php bloginfo( 'name' ); ?>
                 </h1>
             </a>
 
@@ -54,9 +30,29 @@
             <a href="<?php bloginfo('wpurl'); ?>">
                 <h1>
                     <?php bloginfo( 'name' ); ?></h1>
-            </a>
+                </a>
 
-        <?php endif; ?>
+            <?php endif; ?>
+            
+                <label for="show-menu" class="show-menu"><img src="<?php bloginfo('template_directory'); ?>/images/menu_button.png">
+                </label>
+                <input type="checkbox" id="show-menu" role="button">
+
+                <nav id="menu" class="main-nav">
+                    <?php wp_nav_menu([
+
+                    'theme_location' => 'primary'
+
+                ]); ?>
+
+
+        </nav>
+
+
+
+
+
+
 
 
     </div>
