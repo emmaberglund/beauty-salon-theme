@@ -31,7 +31,7 @@ function our_widgets_init(){
         'id' => 'footer3'
     ]);
 
-  
+
 }
 
 add_action('widgets_init', 'our_widgets_init');
@@ -52,7 +52,7 @@ register_nav_menus([
     add_image_size('banner_image', 960, 320, true);
     add_image_size('banner_small', 627.188, 150, true);
 
-    
+
     //till galleri-pluginet
     if ( ! isset( $content_width ) )
     $content_width = 1920;
@@ -63,6 +63,18 @@ add_filter( 'the_content_more_link', 'modify_read_more_link' );
 function modify_read_more_link() {
 return '<a class="more-link" href="' . get_permalink() . '">Läs mer >></a>';
 }
+
+function logo_customize_register( $wp_customize ) {
+    $wp_customize->add_setting( 'logo' ); // Add setting for logo uploader
+
+    // Add control for logo uploader (actual uploader)
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'logo', array(
+        'label'    => __( 'Upload Logo (replaces text)', 'logo' ),
+        'section'  => 'title_tagline',
+        'settings' => 'logo',
+    ) ) );
+}
+add_action( 'customize_register', 'logo_customize_register' );
 
 
 

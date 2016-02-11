@@ -26,27 +26,25 @@
                 ]); ?>
 
                 </div>
-        </nav>
+             </nav>
 
+                <?php if ( get_theme_mod( 'logo' ) ) : ?>
+            <a href="<?php bloginfo('wpurl'); ?>">
+                <h1 style="background-image:url('<?php echo get_theme_mod( 'logo' ); ?>');" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" id="logo">
 
+                        <?php bloginfo( 'name' ); ?>
+                </h1>
+            </a>
 
-            <!--<h1><a href="<//?php echo home_url();?>"><//?php bloginfo('name');?></a></h1>
-            <h5><//?php bloginfo('description');?></h5>
+        <?php else : ?>
 
-                <//?php if(is_page('about-2')){
-                    echo "This is conditional logic that works for specific pages";
+            <a href="<?php bloginfo('wpurl'); ?>">
+                <h1>
+                    <?php bloginfo( 'name' ); ?></h1>
+            </a>
 
-                }?>-->
+        <?php endif; ?>
 
-
-             <a href="http://berglundscykel.se">
-                 <!--<h1 id="logo"><//?php
-                 wp_title('|', true, 'right');
-                 bloginfo('name');
-
-                 ?></h1>
-                 <h2><//?php bloginfo('description'); ?></h2>-->
-             </a>
 
 
     </div>
