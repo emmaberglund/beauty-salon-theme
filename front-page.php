@@ -24,7 +24,8 @@
 
     <div class="row">
         <div class="twelve columns introduction">
-            <img src="images/instagram-icon-green.png">
+
+            <img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-green.png">
             <?php dynamic_sidebar('Instagram'); ?>
         </div>
     </div>
