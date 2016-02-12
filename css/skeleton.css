@@ -29,9 +29,10 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
+  list-style: none;
   position: relative;
   width: 100%;
-  max-width: 960px;
+  /*max-width: 960px;*/
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -44,14 +45,14 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 100%;
     padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 100%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -62,7 +63,7 @@
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
+  .three.columns                  { width: 25%;            }
   .four.columns                   { width: 30.6666666667%; }
   .five.columns                   { width: 39.3333333333%; }
   .six.columns                    { width: 48%;            }

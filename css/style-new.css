@@ -95,6 +95,45 @@ nav ul {
       nav ul li a:hover {
         color: pink; }
 
+/* ---- Offers ----*/
+.offer-picture {
+  border-radius: 50%; }
+
+.offer {
+  margin: auto;
+  padding: 20px; }
+  .offer .offer-header {
+    color: #333;
+    font-family: LANEAR, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; }
+  .offer .offer-text {
+    color: #333;
+    font-family: LANEAR, sans-serif;
+    font-size: 18px;
+    text-align: center; }
+
+/* ---- End Offers ----*/
+/* ---- Introduction ---- */
+.intro {
+  background-color: #86e9cb;
+  padding: 50px;
+  text-align: center;
+  color: #333;
+  font-family: LANEAR, sans-serif;
+  font-size: 18px;
+  color: white; }
+  .intro .intro-header {
+    color: #333;
+    font-family: LANEAR, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 25px; }
+
+/* ---- End Introduction ---- */
 /*MEDIA QUERIES */
 /* Larger than mobile */
 /* Larger than tablet (also point when grid becomes active) */
