@@ -104,14 +104,14 @@ nav ul {
   margin: auto;
   padding: 20px; }
   .offer .offer-header {
-    color: #fff;
+    color: black;
     font-family: LANEAR, sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center; }
   .offer .offer-text {
-    color: #fff;
+    color: black;
     font-family: LANEAR, sans-serif;
     font-size: 18px;
     text-align: center; }
@@ -122,12 +122,12 @@ nav ul {
   background-color: #86e9cb;
   padding: 50px;
   text-align: center;
-  color: #fff;
+  color: black;
   font-family: LANEAR, sans-serif;
   font-size: 18px;
   color: white; }
   .intro .intro-header {
-    color: #fff;
+    color: black;
     font-family: LANEAR, sans-serif;
     font-size: 20px;
     font-weight: bold;

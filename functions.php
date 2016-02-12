@@ -56,9 +56,9 @@ function our_widgets_init(){
         'class' => 'introduction'
     ]);
     register_sidebar([
-        'name' => 'IntroductionFrontPage',
-        'id' => 'introductionfrontpage',
-        'class' => 'introduction'
+        'name' => 'Instagram',
+        'id' => 'instagram',
+        'class' => 'instagram'
     ]);
 
 
