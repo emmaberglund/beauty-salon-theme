@@ -68,10 +68,14 @@ input[type=checkbox] {
 
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #menu {
-  display: block; }
+  opacity: 1;
+  height: auto; }
 
 #menu {
-  display: none; }
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden; }
 
 .show-menu {
   display: block;
@@ -141,7 +145,9 @@ nav ul {
 /* Larger than tablet */
 @media (min-width: 750px) {
   header #menu {
-    display: block; }
+    display: block;
+    opacity: 1;
+    height: auto; }
     header #menu ul {
       float: right;
       margin: 0;

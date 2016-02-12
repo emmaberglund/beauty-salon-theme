@@ -105,12 +105,20 @@ input[type=checkbox]{
 
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #menu{
-display: block;
+    //display: block;
+    opacity: 1;
+    height: auto;
 }
 
 #menu {
-    display: none;
+    //display: none;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
+
+
 
 .show-menu {
     display: block;
@@ -200,6 +208,8 @@ nav ul{
     header{
         #menu{
             display: block;
+            opacity: 1;
+            height: auto;
             ul{
                 float:right;
                 margin: 0;
