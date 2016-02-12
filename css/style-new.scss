@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: LANEAR;
   src: url(../fonts/LANENAR_.ttf);
@@ -35,6 +34,25 @@
   content: " ";
   display: table;
   clear: both;
+  }
+
+$text-color: #fff;
+$background-color: #fff;
+$green : #86e9cb;
+$blue: #86e9e4;
+$pink: #fab2e7;
+
+.attachment-post-thumbnail{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: $background-color;
+  margin: 0px;
+}
+
+p{
+  color: black;
 }
 
 body, html{
@@ -100,7 +118,7 @@ nav ul{
         border-bottom: solid 1px rgba(255, 255, 255, 0.42);
         padding: 9px 0;
         a{
-            color: white;
+            color: $text-color;;
             &:hover{
                 color:pink;
             }
@@ -116,11 +134,8 @@ nav ul{
 
   }
 
-
-
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-
 
 }
 
@@ -149,8 +164,6 @@ nav ul{
     .show-menu{
         display: none;
     }
-
-
 
 }
 

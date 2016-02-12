@@ -1,7 +1,6 @@
 <?php get_header(); ?>
+<?php the_post_thumbnail(); ?>
 <div class="main container white-box" id="content white-box top-space">
-
-
     <div class="row">
 
 

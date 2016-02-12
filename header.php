@@ -25,6 +25,7 @@
                 </h1>
             </a>
 
+
         <?php else : ?>
 
             <a href="<?php bloginfo('wpurl'); ?>">
@@ -33,7 +34,7 @@
                 </a>
 
             <?php endif; ?>
-            
+
                 <label for="show-menu" class="show-menu"><img src="<?php bloginfo('template_directory'); ?>/images/menu_button.png">
                 </label>
                 <input type="checkbox" id="show-menu" role="button">
@@ -46,7 +47,8 @@
                 ]); ?>
 
 
-        </nav>
+                </nav>
+
 
 
 
