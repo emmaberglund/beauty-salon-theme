@@ -1,7 +1,26 @@
 <?php get_header(); ?>
 <?php the_post_thumbnail(); ?>
-<div class="main container white-box" id="content white-box top-space">
+<div class="container">
     <div class="row">
+        <div class="three columns offer">
+            <?php dynamic_sidebar('ContentOffer1'); ?>
+        </div>
+        <div class="three columns offer">
+            <?php dynamic_sidebar('ContentOffer2'); ?>
+        </div>
+        <div class="three columns offer">
+            <?php dynamic_sidebar('ContentOffer3'); ?>
+        </div>
+        <div class="three columns offer">
+            <?php dynamic_sidebar('ContentOffer4'); ?>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns introduction">
+            <?php dynamic_sidebar('IntroductionFrontPage'); ?>
+        </div>
+    </div>
 
 
 

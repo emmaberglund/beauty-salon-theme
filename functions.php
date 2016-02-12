@@ -30,6 +30,36 @@ function our_widgets_init(){
         'name' => 'Footer',
         'id' => 'footer3'
     ]);
+    register_sidebar([
+        'name' => 'ContentOffer1',
+        'id' => 'contentoffer1',
+        'class' => 'content-offers'
+    ]);
+    register_sidebar([
+        'name' => 'ContentOffer2',
+        'id' => 'contentoffer2',
+        'class' => 'content-offers'
+    ]);
+    register_sidebar([
+        'name' => 'ContentOffer3',
+        'id' => 'contentoffer3',
+        'class' => 'content-offers'
+    ]);
+    register_sidebar([
+        'name' => 'ContentOffer4',
+        'id' => 'contentoffer4',
+        'class' => 'content-offers'
+    ]);
+    register_sidebar([
+        'name' => 'IntroductionFrontPage',
+        'id' => 'introductionfrontpage',
+        'class' => 'introduction'
+    ]);
+    register_sidebar([
+        'name' => 'IntroductionFrontPage',
+        'id' => 'introductionfrontpage',
+        'class' => 'introduction'
+    ]);
 
 
 }

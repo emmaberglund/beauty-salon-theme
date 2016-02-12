@@ -18,7 +18,7 @@
         </div>
     
    
-    <div class="twelve columns"><p class="center">&copy; <?php bloginfo('author');?> <?php the_time('Y');?></p></div>
+    <div class="twelve columns"><p class="center"><!--&copy; <!--<//?php bloginfo('author');?> <//?php the_time('Y');?></p></div>
     
         </div>
     
