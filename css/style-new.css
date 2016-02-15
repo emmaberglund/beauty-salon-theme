@@ -126,6 +126,7 @@ nav ul {
   background-color: #86e9cb;
   padding: 50px;
   text-align: center;
+  margin-bottom: 0px;
   color: black;
   font-family: LANEAR, sans-serif;
   font-size: 18px;
@@ -138,13 +139,26 @@ nav ul {
     color: white;
     font-size: 25px; }
 
-.instagram-icon {
+.icons {
   width: 40px; }
-  .instagram-icon:hover {
+  .icons:hover {
     cursor: pointer; }
+
+.social-media {
+  text-align: center; }
+  .social-media a {
+    padding: 5px; }
+
+.instagram {
+  display: none;
+  padding: 0px 20px 0px 20px; }
 
 /* ---- End Introduction ---- */
 /*MEDIA QUERIES */
+@media (min-width: 480px) {
+  .instagram {
+    display: block; } }
+
 /* Larger than mobile */
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
@@ -152,7 +166,9 @@ nav ul {
     padding: 20px; }
   .three.columns {
     width: 50%;
-    padding: 20px 30px 10px 30px; } }
+    padding: 20px 30px 10px 30px; }
+  .instagram {
+    padding: 0px 20px 0px 20px; } }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
@@ -179,4 +195,6 @@ nav ul {
 @media (min-width: 1025px) {
   .three.columns {
     width: 25%;
-    padding: 20px; } }
+    padding: 20px; }
+  .instagram {
+    padding: 0px 80px 0px 80px; } }
