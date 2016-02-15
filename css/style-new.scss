@@ -157,7 +157,7 @@ nav ul{
 
 .offer{
   margin: auto;
-  padding: 20px;
+  padding: 20px 60px 10px 60px;
 
   .offer-header{
     @include p-header-text;
@@ -189,6 +189,13 @@ nav ul{
 
 }
 
+.instagram-icon{
+  width: 40px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
 /* ---- End Introduction ---- */
 
 /*MEDIA QUERIES */
@@ -200,11 +207,18 @@ nav ul{
 
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
+  .offer{
+    padding: 20px;
+  }
+  .three.columns{
+    width: 50%;
+    padding: 20px 30px 10px 30px;
+  }
 
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (min-width: 750px) { 
     header{
         #menu{
             display: block;
@@ -235,5 +249,9 @@ nav ul{
 
 /* Larger than desktop */
 @media (min-width: 1025px) {
+  .three.columns{
+    width: 25%;
+    padding: 20px;
+  }
 
 }

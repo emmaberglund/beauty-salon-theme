@@ -25,7 +25,7 @@
     <div class="row">
         <div class="twelve columns introduction">
 
-            <img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-green.png">
+            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-green.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/instagram-icon-black.png'" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/instagram-icon-green.png'" class="instagram-icon" alt="instagramIcon"></a>
             <?php dynamic_sidebar('Instagram'); ?>
         </div>
     </div>

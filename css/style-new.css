@@ -106,7 +106,7 @@ nav ul {
 
 .offer {
   margin: auto;
-  padding: 20px; }
+  padding: 20px 60px 10px 60px; }
   .offer .offer-header {
     color: black;
     font-family: LANEAR, sans-serif;
@@ -138,10 +138,22 @@ nav ul {
     color: white;
     font-size: 25px; }
 
+.instagram-icon {
+  width: 40px; }
+  .instagram-icon:hover {
+    cursor: pointer; }
+
 /* ---- End Introduction ---- */
 /*MEDIA QUERIES */
 /* Larger than mobile */
 /* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .offer {
+    padding: 20px; }
+  .three.columns {
+    width: 50%;
+    padding: 20px 30px 10px 30px; } }
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   header #menu {
@@ -164,3 +176,7 @@ nav ul {
     display: none; } }
 
 /* Larger than desktop */
+@media (min-width: 1025px) {
+  .three.columns {
+    width: 25%;
+    padding: 20px; } }
