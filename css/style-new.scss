@@ -220,7 +220,7 @@ nav ul{
 }
 .social-media{
   text-align: center;
-  margin-top: -40px;
+  margin-top: 10px;
   a{
     padding: 5px;
   }
@@ -268,9 +268,11 @@ nav ul{
 }
 .contact-icon{
   width: 37px;
+  padding-bottom: 5px;
 }
 .contact-icon-large{
   width: 25px;
+  padding-bottom: 4px;
 }
 .copy{
   font-size: 10px;
@@ -285,6 +287,9 @@ nav ul{
 .instagram{
   display: block;
 }
+  .social-media{
+    margin-top: -40px;
+  }
 }
 
 /* Larger than mobile */
