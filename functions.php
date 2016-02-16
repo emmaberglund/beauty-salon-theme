@@ -117,6 +117,82 @@ function logo_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'logo_customize_register' );
 
+function tcx_register_theme_customizer( $wp_customize ) {
+
+    $wp_customize->add_setting(
+        'tcx_menu_color',
+        array(
+            'default'     => '#fff'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'menu_color',
+            array(
+                'label'      => __( 'Menu Color', 'tcx' ),
+                'section'    => 'colors',
+                'settings'   => 'tcx_menu_color'
+            )
+        )
+    );
+
+    $wp_customize->add_setting(
+        'tcx_menu_color_hover',
+        array(
+            'default'     => 'pink'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'menu_color_hover',
+            array(
+                'label'      => __( 'Menu Color Hover', 'tcx' ),
+                'section'    => 'colors',
+                'settings'   => 'tcx_menu_color_hover'
+            )
+        )
+    );
+
+    $wp_customize->add_setting(
+        'tcx_section_color',
+        array(
+            'default'     => 'blue'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'section_color',
+            array(
+                'label'      => __( 'Section Color', 'tcx' ),
+                'section'    => 'colors',
+                'settings'   => 'tcx_section_color'
+            )
+        )
+    );
+
+}
+add_action( 'customize_register', 'tcx_register_theme_customizer' );
+
+
+add_action( 'wp_head', 'tcx_customizer_css');
+function tcx_customizer_css() {
+  ?>
+    <style type="text/css">
+        nav ul li a { color: <?php echo get_theme_mod( 'tcx_menu_color' ); ?>; }
+        nav ul li a:hover { color: <?php echo get_theme_mod( 'tcx_menu_color_hover' ); ?>; }
+        .introduction { background-color: <?php echo get_theme_mod( 'tcx_section_color' ); ?>; }
+    </style>
+  <?php
+}
+add_action( 'wp_head', 'tcx_customizer_css' );
+
+
 
 
 ?>
