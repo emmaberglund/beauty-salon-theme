@@ -30,6 +30,11 @@
   src: url(../fonts/Foglihten-068.otf);
 }
 
+@font-face {
+  font-family: lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
 .clear{
   content: " ";
   display: table;
@@ -58,8 +63,22 @@ $lightgreen : #97ffe0;
 
 .attachment-post-thumbnail{
   width: 100%;
-  height: 100%;
+  height: auto;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
+
+.header-image{
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
 body{
   background-color: $background-color;
   margin: 0px;
