@@ -30,16 +30,20 @@ function our_widgets_init(){
         'after_title' => '</h4>'
     ]);
     register_sidebar([
-        'name' => 'Footer',
+        'name' => 'Footer1',
         'id' => 'footer1'
     ]);
     register_sidebar([
-        'name' => 'Footer',
+        'name' => 'Footer2',
         'id' => 'footer2'
     ]);
     register_sidebar([
-        'name' => 'Footer',
+        'name' => 'Footer3',
         'id' => 'footer3'
+    ]);
+    register_sidebar([
+        'name' => 'FooterMap',
+        'id' => 'footermap'
     ]);
     register_sidebar([
         'name' => 'ContentOffer1',
