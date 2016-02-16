@@ -195,8 +195,8 @@ nav ul{
 /* ---- Introduction ---- */
 
 .introduction{
+  background-color: $green;
   p {
-    background-color: $green;
     padding: 50px;
     text-align: center;
     margin-bottom: 0px;
@@ -208,6 +208,9 @@ nav ul{
     @include p-header-text;
     color: white;
     font-size: 25px;
+  }
+  .textwidget{
+    padding: 50px;
   }
 
 }
