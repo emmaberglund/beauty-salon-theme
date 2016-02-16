@@ -145,7 +145,7 @@ function tcx_register_theme_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'tcx_menu_color_hover',
         array(
-            'default'     => 'pink'
+            'default'     => '#FFC0CB'
         )
     );
 
@@ -164,7 +164,7 @@ function tcx_register_theme_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'tcx_section_color',
         array(
-            'default'     => 'blue'
+            'default'     => '#86e9cb'
         )
     );
 

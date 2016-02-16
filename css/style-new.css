@@ -138,23 +138,25 @@ nav ul {
 
 /* ---- End Offers ----*/
 /* ---- Introduction ---- */
-.introduction p {
-  background-color: #86e9cb;
-  padding: 50px;
-  text-align: center;
-  margin-bottom: 0px;
-  color: black;
-  font-family: LANEAR, sans-serif;
-  font-size: 18px;
-  color: white; }
-
-.introduction .intro-header {
-  color: black;
-  font-family: LANEAR, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  font-size: 25px; }
+.introduction {
+  background-color: #86e9cb; }
+  .introduction p {
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: black;
+    font-family: LANEAR, sans-serif;
+    font-size: 18px;
+    color: white; }
+  .introduction .intro-header {
+    color: black;
+    font-family: LANEAR, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 25px; }
+  .introduction .textwidget {
+    padding: 50px; }
 
 .icons {
   width: 40px; }
