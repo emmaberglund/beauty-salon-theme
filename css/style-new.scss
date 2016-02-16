@@ -192,6 +192,7 @@ nav ul{
   background-color: $green;
   padding: 50px;
   text-align: center;
+  margin-bottom: 0px;
   @include p-text;
   color: white;
 
@@ -203,16 +204,32 @@ nav ul{
 
 }
 
-.instagram-icon{
+.icons{
   width: 40px;
   &:hover{
     cursor: pointer;
   }
 }
+.social-media{
+  text-align: center;
+  a{
+    padding: 5px;
+  }
+}
+
+.instagram{
+  display: none;
+  padding: 0px 20px 0px 20px;
+}
 
 /* ---- End Introduction ---- */
 
 /*MEDIA QUERIES */
+@media (min-width: 480px) {
+.instagram{
+  display: block;
+}
+}
 
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -227,6 +244,10 @@ nav ul{
   .three.columns{
     width: 50%;
     padding: 20px 30px 10px 30px;
+  }
+
+  .instagram{
+    padding: 0px 20px 0px 20px;
   }
 
 }
@@ -266,6 +287,10 @@ nav ul{
   .three.columns{
     width: 25%;
     padding: 20px;
+  }
+
+  .instagram{
+    padding: 0px 80px 0px 80px;
   }
 
 }
