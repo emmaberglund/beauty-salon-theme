@@ -26,15 +26,13 @@
         <div class="twelve columns instagram">
             <?php dynamic_sidebar('Instagram'); ?>
         </div>
-    </div>
-
-    <div class="row">
         <div class="twelve columns social-media">
             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon-green.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/instagram-icon-black.png'" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/instagram-icon-green.png'" class="icons" alt="instagramIcon"></a>
 
             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon-green.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/facebook-icon-black.png'" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/facebook-icon-green.png'" class="icons" alt="facebookIcon"></a>
         </div>
     </div>
+
 
 
 

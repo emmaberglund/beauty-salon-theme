@@ -138,7 +138,7 @@ nav ul {
 
 /* ---- End Offers ----*/
 /* ---- Introduction ---- */
-.intro {
+.introduction p {
   background-color: #86e9cb;
   padding: 50px;
   text-align: center;
@@ -147,13 +147,14 @@ nav ul {
   font-family: LANEAR, sans-serif;
   font-size: 18px;
   color: white; }
-  .intro .intro-header {
-    color: black;
-    font-family: LANEAR, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    font-size: 25px; }
+
+.introduction .intro-header {
+  color: black;
+  font-family: LANEAR, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px; }
 
 .icons {
   width: 40px; }
@@ -161,7 +162,8 @@ nav ul {
     cursor: pointer; }
 
 .social-media {
-  text-align: center; }
+  text-align: center;
+  margin-top: -40px; }
   .social-media a {
     padding: 5px; }
 
@@ -170,6 +172,46 @@ nav ul {
   padding: 0px 20px 0px 20px; }
 
 /* ---- End Introduction ---- */
+/* ---- Footer ---- */
+.footer {
+  background-color: rgba(151, 255, 224, 0.2);
+  color: black;
+  font-family: LANEAR, sans-serif;
+  font-size: 18px; }
+  .footer img {
+    display: block;
+    margin: auto; }
+  .footer a {
+    color: black; }
+  .footer .footer1:first-child {
+    padding: 0px 30px 0px 30px;
+    margin-top: 12px;
+    margin-bottom: -10px; }
+  .footer .footer-header {
+    color: black;
+    font-family: LANEAR, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 300px; }
+  .footer li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0px; }
+
+.contact-icon {
+  width: 37px; }
+
+.contact-icon-large {
+  width: 25px; }
+
+.copy {
+  font-size: 10px;
+  margin-bottom: 1px;
+  text-align: center;
+  background-color: white; }
+
+/* ---- End Footer---- */
 /*MEDIA QUERIES */
 @media (min-width: 480px) {
   .instagram {
@@ -184,7 +226,10 @@ nav ul {
     width: 50%;
     padding: 20px 30px 10px 30px; }
   .instagram {
-    padding: 0px 20px 0px 20px; } }
+    padding: 0px 20px 0px 20px; }
+  .one-third.column {
+    width: 100%;
+    margin-left: 0px; } }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
@@ -213,4 +258,10 @@ nav ul {
     width: 25%;
     padding: 20px; }
   .instagram {
-    padding: 0px 80px 0px 80px; } }
+    padding: 0px 80px 0px 80px; }
+  .one-third.column {
+    width: 33.3333%;
+    margin-left: 0px; }
+  .six.columns.footer1 {
+    width: 100%;
+    margin-left: 0px; } }
