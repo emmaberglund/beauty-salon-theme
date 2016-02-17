@@ -164,12 +164,7 @@ nav ul {
     font-size: 20px;
     font-weight: bold;
     color: white;
-<<<<<<< HEAD
-    font-size: 25px;
-    padding: 50px; }
-=======
     font-size: 25px; }
->>>>>>> fca96bbce621b59e82ebea1456a085dfc99979b4
 
 .icons {
   width: 40px; }
@@ -309,10 +304,7 @@ nav ul {
   .six.columns.footer1 {
     width: 100%;
     margin-left: 0px; }
-<<<<<<< HEAD
+    .six.columns.footer1 .footerparts:first-child {
+      margin-top: 0px; }
   header #menu ul li {
     padding: 27px 20px; } }
-=======
-    .six.columns.footer1 .footerparts:first-child {
-      margin-top: 0px; } }
->>>>>>> fca96bbce621b59e82ebea1456a085dfc99979b4
