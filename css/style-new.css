@@ -31,6 +31,10 @@
   display: table;
   clear: both; }
 
+h1, h2, h3, h4 {
+  font-family: LANEAR;
+  text-transform: uppercase; }
+
 .attachment-post-thumbnail {
   width: 100%;
   height: auto;
@@ -61,7 +65,7 @@ body, html {
 header {
   position: fixed;
   width: 100%;
-  background: rgba(0, 0, 0, 0.48);
+  background: rgba(0, 0, 0, 0.66);
   z-index: 2; }
   header #logo {
     text-indent: -999rem;
@@ -69,8 +73,8 @@ header {
     background-size: cover;
     margin-top: 5px;
     margin-left: 20px;
-    width: 165px;
-    height: 63px;
+    width: 200px;
+    height: 79px;
     margin-bottom: 5px;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
@@ -154,8 +158,7 @@ nav ul {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    font-size: 25px; }
-  .introduction .textwidget {
+    font-size: 25px;
     padding: 50px; }
 
 .icons {
@@ -174,6 +177,20 @@ nav ul {
   padding: 0px 20px 0px 20px; }
 
 /* ---- End Introduction ---- */
+/* ---- Contact ----*/
+.contact {
+  color: black;
+  font-family: LANEAR, sans-serif;
+  font-size: 18px; }
+  .contact label {
+    font-size: 15px; }
+  .contact .contact-intro {
+    background-color: #86e9cb; }
+  .contact .below-header {
+    padding-top: 90px; }
+  .contact .map {
+    pointer-events: none; }
+
 /* ---- Footer ---- */
 .footer {
   background-color: rgba(151, 255, 224, 0.2);
@@ -220,7 +237,7 @@ nav ul {
     display: block; } }
 
 /* Larger than mobile */
-/* Larger than tablet (also point when grid becomes active) */
+/* Tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   .offer {
     padding: 20px; }
@@ -231,10 +248,18 @@ nav ul {
     padding: 0px 20px 0px 20px; }
   .one-third.column {
     width: 100%;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .contact-intro {
+    padding-bottom: 20px; }
+  .below-header {
+    padding-top: 90px; } }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  .below-header {
+    padding-top: 100px; }
+  .contact-intro {
+    padding-bottom: 16px; }
   header #menu {
     display: block;
     opacity: 1;
@@ -248,7 +273,7 @@ nav ul {
         float: left;
         min-height: 1px;
         vertical-align: middle;
-        padding: 20px;
+        padding: 27px 8px;
         margin-bottom: 0;
         border-bottom: none; }
   .show-menu {
@@ -266,4 +291,6 @@ nav ul {
     margin-left: 0px; }
   .six.columns.footer1 {
     width: 100%;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  header #menu ul li {
+    padding: 27px 20px; } }
