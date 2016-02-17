@@ -95,7 +95,19 @@ register_nav_menus([
     add_theme_support('post-thumbnails');
     add_image_size('small_thumbnail', 180, 120, true);
     add_image_size('banner_image', 960, 320, true);
-    add_image_size('banner_small', 627.188, 150, true);
+
+// add new imagesize
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'new-size', 314, 314, true ); //(cropped)
+}
+add_filter('image_size_names_choose', 'my_image_sizes');
+function my_image_sizes($sizes) {
+    $addsizes = array(
+        "new-size" => __( "New Size")
+    );
+    $newsizes = array_merge($sizes, $addsizes);
+    return $newsizes;
+}
 
 
     //till galleri-pluginet
