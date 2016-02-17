@@ -185,6 +185,10 @@ nav ul{
 .offer{
   margin: auto;
   padding: 20px 60px 10px 60px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
 
   .offer-header{
     @include p-header-text;
@@ -196,6 +200,10 @@ nav ul{
     @include p-text;
     text-align: center;
   }
+}
+
+.size-new-size{
+  border-radius: 50%;
 }
 /* ---- End Offers ----*/
 
@@ -215,10 +223,6 @@ nav ul{
     @include p-header-text;
     color: white;
     font-size: 25px;
-    .textwidget{
-  }
-    padding: 50px;
-  }
 
 }
 
@@ -230,7 +234,7 @@ nav ul{
 }
 .social-media{
   text-align: center;
-  margin-top: -40px;
+  margin-top: 10px;
   a{
     padding: 5px;
   }
@@ -276,7 +280,7 @@ nav ul{
     &:first-child {
       padding: 0px 30px 0px 30px;
       margin-top: 12px;
-      margin-bottom: -10px;
+      margin-bottom: -20px;
 
     }
   }
@@ -293,12 +297,21 @@ nav ul{
     text-align: center;
     margin-bottom: 0px;
   }
+
+  .footerparts{
+    &:first-child {
+      margin-top: 5px;
+      margin-bottom: -28px;
+    }
+  }
 }
 .contact-icon{
-  width: 37px;
+  width: 47px;
+  padding-bottom: 5px;
 }
 .contact-icon-large{
   width: 25px;
+  padding-bottom: 4px;
 }
 .copy{
   font-size: 10px;
@@ -313,6 +326,9 @@ nav ul{
 .instagram{
   display: block;
 }
+  .social-media{
+    margin-top: -40px;
+  }
 }
 
 /* Larger than mobile */
@@ -401,10 +417,18 @@ nav ul{
   .six.columns.footer1{
     width: 100%;
     margin-left: 0px;
+    .footerparts{
+      //margin-top: 0px;
+      //margin-bottom: 1px;
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
   }
 
   header #menu ul li{
       padding: 27px 20px;
   }
+
 
 }

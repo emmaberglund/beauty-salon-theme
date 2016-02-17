@@ -127,6 +127,9 @@ nav ul {
 .offer {
   margin: auto;
   padding: 20px 60px 10px 60px; }
+  .offer img {
+    width: 100%;
+    height: 100%; }
   .offer .offer-header {
     color: black;
     font-family: LANEAR, sans-serif;
@@ -139,6 +142,9 @@ nav ul {
     font-family: LANEAR, sans-serif;
     font-size: 18px;
     text-align: center; }
+
+.size-new-size {
+  border-radius: 50%; }
 
 /* ---- End Offers ----*/
 /* ---- Introduction ---- */
@@ -158,8 +164,12 @@ nav ul {
     font-size: 20px;
     font-weight: bold;
     color: white;
+<<<<<<< HEAD
     font-size: 25px;
     padding: 50px; }
+=======
+    font-size: 25px; }
+>>>>>>> fca96bbce621b59e82ebea1456a085dfc99979b4
 
 .icons {
   width: 40px; }
@@ -168,7 +178,7 @@ nav ul {
 
 .social-media {
   text-align: center;
-  margin-top: -40px; }
+  margin-top: 10px; }
   .social-media a {
     padding: 5px; }
 
@@ -205,7 +215,7 @@ nav ul {
   .footer .footer1:first-child {
     padding: 0px 30px 0px 30px;
     margin-top: 12px;
-    margin-bottom: -10px; }
+    margin-bottom: -20px; }
   .footer .footer-header {
     color: black;
     font-family: LANEAR, sans-serif;
@@ -217,12 +227,17 @@ nav ul {
     list-style: none;
     text-align: center;
     margin-bottom: 0px; }
+  .footer .footerparts:first-child {
+    margin-top: 5px;
+    margin-bottom: -28px; }
 
 .contact-icon {
-  width: 37px; }
+  width: 47px;
+  padding-bottom: 5px; }
 
 .contact-icon-large {
-  width: 25px; }
+  width: 25px;
+  padding-bottom: 4px; }
 
 .copy {
   font-size: 10px;
@@ -234,7 +249,9 @@ nav ul {
 /*MEDIA QUERIES */
 @media (min-width: 480px) {
   .instagram {
-    display: block; } }
+    display: block; }
+  .social-media {
+    margin-top: -40px; } }
 
 /* Larger than mobile */
 /* Tablet (also point when grid becomes active) */
@@ -292,5 +309,10 @@ nav ul {
   .six.columns.footer1 {
     width: 100%;
     margin-left: 0px; }
+<<<<<<< HEAD
   header #menu ul li {
     padding: 27px 20px; } }
+=======
+    .six.columns.footer1 .footerparts:first-child {
+      margin-top: 0px; } }
+>>>>>>> fca96bbce621b59e82ebea1456a085dfc99979b4
