@@ -204,8 +204,9 @@ nav ul {
     pointer-events: none; }
   .contact .contact-info {
     background-color: #86e9cb;
-    padding-top: 27px;
-    padding-left: 25px; }
+    padding-top: 27px; }
+    .contact .contact-info p {
+      padding-left: 25px; }
   .contact h2 {
     text-align: center;
     color: white; }

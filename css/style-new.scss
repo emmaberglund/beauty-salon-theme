@@ -277,7 +277,9 @@ nav ul{
     .contact-info{
         background-color: #86e9cb;
         padding-top: 27px;
-        padding-left: 25px;
+        p{
+            padding-left: 25px;
+        }
     }
     h2{
         text-align: center;
