@@ -19,7 +19,7 @@
     <header>
         <?php if ( get_theme_mod( 'logo' ) ) : ?>
             <a href="<?php bloginfo('wpurl'); ?>">
-                <h1 style="background-image:url('<?php echo get_theme_mod( 'logo' ); ?>');" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" id="logo">
+                <h1 style="background-image:url('<?php echo get_theme_mod( 'logo' ); ?>');" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display') ); ?>" id="logo">
 
                     <?php bloginfo( 'name' ); ?>
                 </h1>

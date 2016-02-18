@@ -85,11 +85,141 @@ function our_widgets_init(){
         'id' => 'contact2',
         'class' => 'contact2'
     ]);
+    register_sidebar([
+        'name' => 'Our Workers',
+        'id' => 'ourworkers',
+        'class' => 'ourworkers'
+    ]);
 
 
 }
 
 add_action('widgets_init', 'our_widgets_init');
+
+// Creating the widget
+
+class wpb_widget extends WP_Widget {
+
+    function __construct() {
+parent::__construct(
+// Base ID of your widget
+
+'wpb_widget',
+
+// Widget name will appear in UI
+
+__('Workers', 'wpb_widget_domain'),
+
+// Widget description
+
+array( 'description' => __( 'Camillas custom WorkersWidget', 'wpb_widget_domain' ), )
+
+);
+
+}
+// Creating widget front-end
+
+// This is where the action happens
+
+    public function widget( $args, $instance ) {
+
+$title = apply_filters( 'widget_title', $instance['title'] );
+
+// before and after widget arguments are defined by themes
+
+echo $args['before_widget'];
+
+if ( ! empty( $title ) )
+
+echo $args['before_title'] . $title . $args['after_title'];
+
+// This is where you run the code and display the output
+
+
+function form( $instance )
+{
+    $headline   = esc_attr( isset( $instance['headline'] ) ? $instance['headline'] : '' );
+    $image_id   = esc_attr( isset( $instance[$this->image_field] ) ? $instance[$this->image_field] : 0 );
+    $blurb      = esc_attr( isset( $instance['blurb'] ) ? $instance['blurb'] : '' );
+
+    $image      = new WidgetImageField( $this, $image_id );
+    ?>
+    <p>
+        <label for="<?php echo $this->get_field_id( 'headline' ); ?>"><?php _e( 'Headline:' ); ?>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'headline' ); ?>" name="<?php echo $this->get_field_name( 'headline' ); ?>" type="text" value="<?php echo $headline; ?>" />
+        </label>
+    </p>
+    <div>
+        <label><?php _e( 'Image:' ); ?></label>
+        <?php echo $image->get_widget_field(); ?>
+    </div>
+    <p>
+        <label for="<?php echo $this->get_field_id( 'blurb' ); ?>"><?php _e( 'Blurb:' ); ?>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'blurb' ); ?>" name="<?php echo $this->get_field_name( 'blurb' ); ?>" type="text" value="<?php echo $blurb; ?>" />
+        </label>
+    </p>
+<?php
+}
+
+echo $args['after_widget'];
+
+}
+
+// Widget Backend
+
+    public function form( $instance ) {
+
+if ( isset( $instance[ 'title' ] ) ) {
+
+$title = $instance[ 'title' ];
+
+}
+
+else {
+
+$title = __( 'New title', 'wpb_widget_domain' );
+
+}
+
+// Widget admin form
+
+?>
+
+<p>
+
+    <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+
+    <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+
+</p>
+
+<?php
+
+}
+// Updating widget replacing old instances with new
+
+    public function update( $new_instance, $old_instance ) {
+
+$instance = array();
+
+$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+
+return $instance;
+
+}
+
+} // Class wpb_widget ends here
+
+// Register and load the widget
+function wpb_load_widget() {
+    register_widget( 'wpb_widget' );
+
+}
+add_action( 'widgets_init', 'wpb_load_widget' );
+
+//
+
+
 
 //navigation menu
 

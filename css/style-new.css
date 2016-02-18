@@ -241,6 +241,20 @@ nav ul {
   background-color: white; }
 
 /* ---- End Footer---- */
+/* ---- About---- */
+.about .workers {
+  margin: auto; }
+
+.about li {
+  display: inline-block;
+  margin: auto;
+  padding: 0px 50px 0px 50px; }
+
+.about h2 {
+  padding-top: 20px;
+  text-align: center; }
+
+/* ---- End About---- */
 /*MEDIA QUERIES */
 @media (min-width: 480px) {
   .instagram {
