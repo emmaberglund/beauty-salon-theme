@@ -288,6 +288,10 @@ nav ul{
     .contact-map{
         form{
             text-align: center;
+            #submit{
+                background-color:$green;
+                color:white;
+            }
         }
         h3{
             text-align: center;

@@ -212,6 +212,9 @@ nav ul {
     color: white; }
   .contact .contact-map form {
     text-align: center; }
+    .contact .contact-map form #submit {
+      background-color: #86e9cb;
+      color: white; }
   .contact .contact-map h3 {
     text-align: center;
     color: #86e9e4; }
