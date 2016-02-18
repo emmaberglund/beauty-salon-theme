@@ -249,21 +249,51 @@ nav ul{
 /* ---- End Introduction ---- */
 
 /* ---- Contact ----*/
+.below-header{
+    padding-top: 90px;
+}
+
 .contact{
+    .header-text{
+        padding-left:10px;
+    }
     @include p-text;
+    p{
+        text-align: left;
+    }
+    .contact-map{
+        padding-top: 43px;
+    }
     label{
         font-size: 15px;
     }
     .contact-intro{
-        background-color: $green;
+        background-color: white;
     }
 
-    .below-header{
-        padding-top: 90px;
-    }
     .map{
         pointer-events: none;
     }
+    .contact-info{
+        background-color: #86e9cb;
+        padding-top: 27px;
+        padding-left: 25px;
+    }
+    h2{
+        text-align: center;
+        color: white;
+    }
+    .contact-map{
+        form{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+            color: $blue;
+        }
+    }
+
+
 }
 
 /* ---- Footer ---- */
@@ -359,7 +389,7 @@ nav ul{
   }
 
   .below-header{
-      padding-top: 90px;
+      padding-top: 120px;
   }
 
 }
@@ -367,7 +397,7 @@ nav ul{
 /* Larger than tablet */
 @media (min-width: 750px) {
     .below-header{
-        padding-top:100px;
+        padding-top:120px;
     }
     .contact-intro{
         padding-bottom:16px;

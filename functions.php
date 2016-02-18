@@ -46,6 +46,10 @@ function our_widgets_init(){
         'id' => 'footermap'
     ]);
     register_sidebar([
+        'name' => 'Contact Map',
+        'id' => 'contactmap'
+    ]);
+    register_sidebar([
         'name' => 'ContentOffer1',
         'id' => 'contentoffer1',
         'class' => 'content-offers'
@@ -219,6 +223,9 @@ function tcx_customizer_css() {
 add_action( 'wp_head', 'tcx_customizer_css' );
 
 
-
+//fix for cookie error while login.
+setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
+if ( SITECOOKIEPATH != COOKIEPATH )
+	setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
 
 ?>

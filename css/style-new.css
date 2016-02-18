@@ -183,18 +183,37 @@ nav ul {
 
 /* ---- End Introduction ---- */
 /* ---- Contact ----*/
+.below-header {
+  padding-top: 90px; }
+
 .contact {
   color: black;
   font-family: LANEAR, sans-serif;
   font-size: 18px; }
+  .contact .header-text {
+    padding-left: 10px; }
+  .contact p {
+    text-align: left; }
+  .contact .contact-map {
+    padding-top: 43px; }
   .contact label {
     font-size: 15px; }
   .contact .contact-intro {
-    background-color: #86e9cb; }
-  .contact .below-header {
-    padding-top: 90px; }
+    background-color: white; }
   .contact .map {
     pointer-events: none; }
+  .contact .contact-info {
+    background-color: #86e9cb;
+    padding-top: 27px;
+    padding-left: 25px; }
+  .contact h2 {
+    text-align: center;
+    color: white; }
+  .contact .contact-map form {
+    text-align: center; }
+  .contact .contact-map h3 {
+    text-align: center;
+    color: #86e9e4; }
 
 /* ---- Footer ---- */
 .footer {
@@ -264,12 +283,12 @@ nav ul {
   .contact-intro {
     padding-bottom: 20px; }
   .below-header {
-    padding-top: 90px; } }
+    padding-top: 120px; } }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   .below-header {
-    padding-top: 100px; }
+    padding-top: 120px; }
   .contact-intro {
     padding-bottom: 16px; }
   header #menu {
