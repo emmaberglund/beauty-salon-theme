@@ -10,7 +10,7 @@ get_header();
                     while (have_posts()) : the_post(); ?>
 
 
-            <h2><?php the_content();?></h2>
+            <h2 class="header-text"><?php the_content();?></h2>
 
                 <?php
                     endwhile;
@@ -23,7 +23,7 @@ get_header();
             ?>
         </div>
     </div>
-    <div class="row">
+    <div class="row contact-info">
         <div class="six columns">
             <?php dynamic_sidebar('Contact 1'); ?>
         </div>
@@ -31,9 +31,9 @@ get_header();
             <?php dynamic_sidebar('Contact 2'); ?>
         </div>
     </div>
-    <div class="row">
+    <div class="row contact-map">
         <div class="six columns map">
-            <?php dynamic_sidebar('FooterMap'); ?>
+            <?php dynamic_sidebar('Contact Map'); ?>
         </div>
         <div class="six columns">
             <h3>Kontakta oss gärna!</h3>

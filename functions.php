@@ -46,6 +46,10 @@ function our_widgets_init(){
         'id' => 'footermap'
     ]);
     register_sidebar([
+        'name' => 'Contact Map',
+        'id' => 'contactmap'
+    ]);
+    register_sidebar([
         'name' => 'ContentOffer1',
         'id' => 'contentoffer1',
         'class' => 'content-offers'
@@ -250,16 +254,14 @@ function my_image_sizes($sizes) {
 }
 
 
-    //till galleri-pluginet
-    if ( ! isset( $content_width ) )
-    $content_width = 1920;
-
-
-
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 function modify_read_more_link() {
 return '<a class="more-link" href="' . get_permalink() . '">Läs mer >></a>';
 }
+
+/* ---- CUSTOMIZING CODE ---- */
+
+//Front-page
 
 function logo_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'logo' ); // Add setting for logo uploader
@@ -335,8 +337,9 @@ function tcx_register_theme_customizer( $wp_customize ) {
 }
 add_action( 'customize_register', 'tcx_register_theme_customizer' );
 
+//End of customizing front-page
 
-add_action( 'wp_head', 'tcx_customizer_css');
+//CSS part of customization
 function tcx_customizer_css() {
   ?>
     <style type="text/css">
@@ -349,6 +352,9 @@ function tcx_customizer_css() {
 add_action( 'wp_head', 'tcx_customizer_css' );
 
 
-
+//fix for cookie error while login.
+setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
+if ( SITECOOKIEPATH != COOKIEPATH )
+	setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
 
 ?>
