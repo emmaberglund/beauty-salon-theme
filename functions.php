@@ -20,6 +20,8 @@ function add_my_script() {
 add_action( 'wp_enqueue_scripts', 'add_my_script' );
 
 
+add_theme_support( 'post-thumbnails' ); 
+
 function our_widgets_init(){
     register_sidebar([
         'name' => 'Sidebar',

@@ -248,6 +248,71 @@ nav ul{
 
 /* ---- End Introduction ---- */
 
+/* ---- About ---- */
+.about-employee{
+  text-align: center;
+  margin-bottom: 5px;
+  position: relative;
+    transition: opacity 200ms ease-in-out;
+    -webkit-transition: opacity 200ms ease-in-out;
+    &:hover{
+      opacity: 0.8;
+    }
+  h2{
+    font-size: 1.2em;
+    display:inline;
+  }
+  .about-employee-img{
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+    border-radius: 50%;
+    }
+}
+
+/* ---- End About ---- */
+.title-line {
+  height: 1px;
+  border-top: 1px solid grey;
+  position: absolute;
+  left: 70px;
+  right: 0;
+  bottom: 5%;
+}
+/* ---- Services ---- */
+.service{
+    @include p-text;
+      text-align: center;
+      margin-bottom: 5px;
+      position: relative;
+      transition: opacity 200ms ease-in-out;
+      -webkit-transition: opacity 200ms ease-in-out;
+    &:hover{
+      opacity: 0.8;
+    }
+  h2{
+    font-size: 1.2em;
+    display:inline;
+  }
+  .service-img{
+    width: 350px;
+    height: 230px;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+    }
+}
+
+/* ---- End Services ---- */
+
 /* ---- Contact ----*/
 .below-header{
     padding-top: 90px;

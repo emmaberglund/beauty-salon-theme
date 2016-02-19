@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Om
+Template Name: Behandlingar
 */
 get_header();
 
@@ -24,10 +24,11 @@ if(have_posts()) :
                         ?>
 
 
-                        <div class="about-employee three columns">
-                            <div class ="about-employee-img" style="background-image:url(<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($page->ID), 'medium')[0]; ?>);">
+                        <div class="service four columns">
+                            <div class ="service-img" style="background-image:url(<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($page->ID), 'medium')[0]; ?>);">
                             </div>
                             <h2><?php echo $page->post_title; ?></h2>
+                            <span class="title-line"></span>
                             <p><?php echo $page->post_content; ?></p>
                         </div>
 
