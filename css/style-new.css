@@ -107,7 +107,7 @@ input[type=checkbox]:checked ~ #menu {
 nav ul {
   margin-top: 20px;
   list-style: none;
-  padding-right: 25px; }
+  padding-right: 20px; }
   nav ul li {
     font-family: lato, sans-serif;
     text-transform: uppercase;
@@ -418,7 +418,7 @@ nav ul {
         float: left;
         min-height: 1px;
         vertical-align: middle;
-        padding: 27px 8px;
+        padding: 27px 5px;
         margin-bottom: 0;
         border-bottom: none; }
   .show-menu {
