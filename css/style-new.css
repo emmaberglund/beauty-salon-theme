@@ -151,13 +151,25 @@ nav ul {
 .introduction {
   background-color: #86e9cb; }
   .introduction p {
-    padding: 50px;
+    padding: 0px 50px 0px 50px;
     text-align: center;
     margin-bottom: 0px;
     color: black;
     font-family: LANEAR, sans-serif;
     font-size: 18px;
     color: white; }
+  .introduction h2 {
+    color: black;
+    font-family: LANEAR, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: inherit;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px; }
   .introduction .intro-header {
     color: black;
     font-family: LANEAR, sans-serif;
@@ -266,12 +278,17 @@ nav ul {
 /* ---- End Footer---- */
 /* ---- About---- */
 .about .workers {
-  margin: auto; }
+  width: 25%;
+  display: inline-block;
+  margin: auto;
+  float: right; }
 
 .about li {
   display: inline-block;
   margin: auto;
   padding: 0px 50px 0px 50px; }
+  .about li p {
+    text-align: center; }
 
 .about h2 {
   padding-top: 20px;
