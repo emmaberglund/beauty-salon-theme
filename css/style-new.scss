@@ -212,11 +212,22 @@ nav ul{
 .introduction{
   background-color: $green;
   p {
-    padding: 50px;
+    padding: 0px 50px 0px 50px;
     text-align: center;
     margin-bottom: 0px;
     @include p-text;
     color: white;
+  }
+  h2{
+    @include p-header-text;
+    text-transform: inherit;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+
   }
 
   .intro-header{
@@ -427,12 +438,18 @@ nav ul{
 
 .about{
   .workers{
+    width: 25%;
+    display: inline-block;
     margin: auto;
+    float:right;
   }
   li{
     display: inline-block;
     margin: auto;
     padding:0px 50px 0px 50px;
+    p{
+      text-align: center;
+    }
   }
   h2{
     padding-top: 20px;

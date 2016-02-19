@@ -32,14 +32,6 @@
             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon-green.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/facebook-icon-black.png'" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/facebook-icon-green.png'" class="icons" alt="facebookIcon"></a>
         </div>
     </div>
-
-
-
-
-
-
-
-
         <div class="twelve columns">
             <?php
                 if(have_posts()) :
@@ -60,7 +52,4 @@
             </div>
         </div>
     </div>
-
-
-
-                <?php get_footer(); ?>
+<?php get_footer(); ?>
