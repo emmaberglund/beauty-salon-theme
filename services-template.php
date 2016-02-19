@@ -16,10 +16,9 @@ if(have_posts()) :
         $pages = get_pages(array('child_of'=> $post->ID ,'sort_order'=> 'asc', 'sort_column' => 'menu_order'));
         ?>
         <main>
-            <div class="container">
+            <div class="container services">
                 <div class="row below-header">
                     <?php
-                    $count = 1;
                     foreach ($pages as $page) {
                         ?>
 
@@ -28,20 +27,19 @@ if(have_posts()) :
                             <div class ="service-img" style="background-image:url(<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($page->ID), 'medium')[0]; ?>);">
                             </div>
                             <h2><?php echo $page->post_title; ?></h2>
-                            <span class="title-line"></span>
                             <p><?php echo $page->post_content; ?></p>
                         </div>
 
 
 
-                          <?php if($count % 3 == 0) {?>
+                          <?php if(1==2) {?>
                                 </div>
-                                <div class="row">
+
                           <?php }
-                        $count++;
+
                     }
                     ?>
-                </div>
+
             </div>
         </main>
     <?php

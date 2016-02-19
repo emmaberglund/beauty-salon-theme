@@ -295,32 +295,48 @@ nav ul{
   bottom: 5%;
 }
 /* ---- Services ---- */
-.service{
-    @include p-text;
-      text-align: center;
-      margin-bottom: 5px;
-      position: relative;
-      transition: opacity 200ms ease-in-out;
-      -webkit-transition: opacity 200ms ease-in-out;
-    &:hover{
-      opacity: 0.8;
-    }
-  h2{
-    font-size: 1.2em;
-    display:inline;
-  }
-  .service-img{
-    width: 350px;
-    height: 230px;
-    max-width: 100%;
-    max-height: 100%;
-    background-size: cover;
-    background-position: center center;
+.services{
+    max-width: 1050px;
     margin: 0 auto;
-    border: 4px solid #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+    .service{
+        @include p-text;
+          text-align: left;
+          position: relative;
+          transition: opacity 200ms ease-in-out;
+          -webkit-transition: opacity 200ms ease-in-out;
+          padding: 20px;
+          border: 10px solid white;
+
+          background-color: $pink;
+        
+        &:hover{
+          opacity: 0.8;
+        }
+      h2{
+          font-size: 1.2em;
+          display:inline;
+        &::after{
+            content: '';
+            display: block;
+            width: 179px;
+            height: 2px;
+            background: $green;
+            margin: 7px 0 12px 0;
+        }
+      }
+      .service-img{
+        height: 50vw;
+        max-width: 100%;
+        max-height: 100%;
+        background-size: cover;
+        background-position: center center;
+        border: 4px solid #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+        margin-bottom: 14px;
+        }
     }
 }
+
 
 /* ---- End Services ---- */
 
@@ -498,6 +514,17 @@ nav ul{
   .below-header{
       padding-top: 120px;
   }
+  .services{
+      .service{
+          width: 50%;
+          margin-left: 0;
+          .service-img{
+              height: 170px;
+          }
+      }
+
+  }
+
 
 }
 
@@ -505,6 +532,15 @@ nav ul{
 @media (min-width: 750px) {
     .below-header{
         padding-top:120px;
+    }
+    .services{
+        max-width: 1200px;
+        margin: 0 auto;
+        .service{
+            .service-img{
+                height: 220px;
+            }
+        }
     }
     .contact-intro{
         padding-bottom:16px;
@@ -566,6 +602,15 @@ nav ul{
 
   header #menu ul li{
       padding: 27px 20px;
+  }
+
+  .services{
+      .service{
+          width: 33.3333%;
+          .service-img{
+              height: 230px;
+          }
+      }
   }
 
 
