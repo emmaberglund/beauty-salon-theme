@@ -86,7 +86,7 @@ h1, h2, h3, h4{
 .header-text{
     padding-left:10px;
     font-family: Dancing, sans-serif;
-    text-transform: lowercase;
+    text-transform: none;
 }
 
 
@@ -125,7 +125,8 @@ body, html{
 header {
     position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.66);
+    //background: rgba(0, 0, 0, 0.66);
+    background: black;
     z-index: 2;
     #logo {
         text-indent: -999rem;
