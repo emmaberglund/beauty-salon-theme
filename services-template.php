@@ -12,12 +12,22 @@ $thumb_url = $thumb_url_array[0];
 if(have_posts()) :
     while (have_posts()) : the_post();
 
+?>
+<main>
+    <div class="container services">
+        <div class="row below-header">
+            <div class="twelve columns">
+                <h2 class="header-text"><?php the_content();?></h2>
+            </div>
+        </div>
+
+<?php
+
 
         $pages = get_pages(array('child_of'=> $post->ID ,'sort_order'=> 'asc', 'sort_column' => 'menu_order'));
         ?>
-        <main>
-            <div class="container services">
-                <div class="row below-header">
+
+                <div class="row">
                     <?php
                     foreach ($pages as $page) {
                         ?>

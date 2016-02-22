@@ -26,6 +26,18 @@
   font-family: lato;
   src: url(../fonts/Lato-Regular.ttf); }
 
+@font-face {
+  font-family: Ke-aloha;
+  src: url(../fonts/Ke-Aloha.ttf); }
+
+@font-face {
+  font-family: Mawns;
+  src: url(../fonts/Mawns_Handwriting.ttf); }
+
+@font-face {
+  font-family: Dancing;
+  src: url(../fonts/DancingScript-Regular.ttf); }
+
 .clear {
   content: " ";
   display: table;
@@ -34,6 +46,11 @@
 h1, h2, h3, h4 {
   font-family: LANEAR;
   text-transform: uppercase; }
+
+.header-text {
+  padding-left: 10px;
+  font-family: Dancing, sans-serif;
+  text-transform: lowercase; }
 
 .attachment-post-thumbnail {
   width: 100%;
@@ -227,18 +244,19 @@ nav ul {
 
 /* ---- Services ---- */
 .services {
-  max-width: 1050px;
   margin: 0 auto; }
+  .services .header-text {
+    padding-left: 10px; }
   .services .service {
     color: black;
-    font-family: LANEAR, sans-serif;
-    font-size: 18px;
+    font-family: Gudea, sans-serif;
+    font-size: 16 px;
     text-align: left;
     position: relative;
     transition: opacity 200ms ease-in-out;
     -webkit-transition: opacity 200ms ease-in-out;
     padding: 20px;
-    border: 10px solid white;
+    border: 5px solid white;
     background-color: #FFD1DC; }
     .services .service:hover {
       opacity: 0.8; }
@@ -269,10 +287,8 @@ nav ul {
 
 .contact {
   color: black;
-  font-family: LANEAR, sans-serif;
-  font-size: 18px; }
-  .contact .header-text {
-    padding-left: 10px; }
+  font-family: Gudea, sans-serif;
+  font-size: 16 px; }
   .contact p {
     text-align: left; }
   .contact .contact-map {
@@ -399,7 +415,6 @@ nav ul {
   .below-header {
     padding-top: 120px; }
   .services {
-    max-width: 1200px;
     margin: 0 auto; }
     .services .service .service-img {
       height: 220px; }
