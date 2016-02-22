@@ -6,7 +6,6 @@ jQuery(function($) { // DOM is now read and ready to be manipulated
 
     $(window).scroll(function() {
         if ($(this).scrollTop() == 0) {
-            console.log("hej");
             $('#header').css({
                     'background-color': 'black',
                     'box-shadow': 'none',
@@ -14,7 +13,6 @@ jQuery(function($) { // DOM is now read and ready to be manipulated
                     '-webkit-box-shadow' : 'none' });
         }
         else {
-            console.log("hejdå");
             $('#header').css({
                     'background-color': 'rgba(0, 0, 0, 0.66)',
                     //'box-shadow': '0px 10px 10px #888',
