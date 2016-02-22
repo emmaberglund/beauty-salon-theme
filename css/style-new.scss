@@ -46,6 +46,14 @@
   font-family: Dancing;
   src: url(../fonts/DancingScript-Regular.ttf);
 }
+@font-face {
+  font-family: Debby;
+  src: url(../fonts/Debby.ttf);
+}
+@font-face {
+  font-family: Abra;
+  src: url(../fonts/AbrahamLincoln.ttf);
+}
 
 
 .clear{
@@ -69,7 +77,7 @@ $lightgreen : #97ffe0;
 @mixin p-text-small{
   color: black;
   font-family: Gudea, sans-serif;
-  font-size: 16 px;
+  font-size: 16px;
 }
 @mixin p-header-text{
   color: black;
@@ -78,9 +86,22 @@ $lightgreen : #97ffe0;
   font-weight: bold;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3{
     font-family: LANEAR;
     text-transform: uppercase;
+}
+h4{
+  //font-family: Abra, sans-serif;
+  //font-size: 40px;
+  //text-align: center;
+  //padding-top: 200px;
+}
+h5{
+  font-family: Abra, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 0px;
 }
 
 .header-text{
@@ -99,6 +120,7 @@ h1, h2, h3, h4{
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
 
 .header-image{
@@ -106,6 +128,7 @@ h1, h2, h3, h4{
   width: 100%;
   overflow: hidden;
   position: relative;
+  z-index: -1;
 }
 
 body{
@@ -433,6 +456,7 @@ nav ul{
     color: black;
   }
   background-color: rgba(151, 255, 224, 0.2);
+  //background-color: rgba(134, 233, 224,1);
   .footer1{
     &:first-child {
       padding: 0px 30px 0px 30px;
@@ -481,13 +505,17 @@ nav ul{
 /* ---- About---- */
 
 .about-us{
-
+  width: 85%;
+  display: block;
+  margin: auto;
 }
 
-
+.employes{
+  padding: 10px 10px 10px 10px;
+}
   .workers{
     //background-color: rgba(151, 255, 224, 0.6);
-    background: -webkit-radial-gradient(center, ellipse cover, #fcfff3 0%, #d2fce4 100%);
+    //background: -webkit-radial-gradient(center, ellipse cover, #fcfff3 0%, #d2fce4 100%);
     padding: 8px 8px 0px 8px;
     margin-left: 0px;
     width: 50%;
@@ -507,12 +535,16 @@ nav ul{
       margin-bottom: 0px;
       text-align: center;
       &:first-child{
-        font-size: 20px;
+        font-size: 17px;
         border-top: 2px solid $blue;
         padding-bottom: 5px;
+        padding-top: 5px;
+      }
+      &:nth-child(2){
+        font-size: 15px;
       }
       &:last-child{
-        font-size: 15px;
+        font-size: 14px;
       }
     }
   }
@@ -523,6 +555,12 @@ nav ul{
 
 
 /* ---- End About---- */
+@media (min-width: 330px) {
+  h5{
+    font-size: 35px;
+  }
+}
+
 
 /*MEDIA QUERIES */
 @media (min-width: 480px) {
@@ -548,7 +586,7 @@ nav ul{
   }
   .three.columns{
     width: 50%;
-    padding: 20px 30px 10px 30px;
+    //padding: 0px 30px 10px 30px;
   }
 
   .instagram{
@@ -563,7 +601,7 @@ nav ul{
   }
 
   .below-header{
-      padding-top: 120px;
+      padding-top: 100px;
   }
 
     .two.columns{
@@ -581,6 +619,12 @@ nav ul{
       }
 
   }
+  .employes{
+    padding: 10px 10px 10px 10px;
+  }
+  h5{
+    font-size: 52px;
+  }
 
 
 }
@@ -588,7 +632,7 @@ nav ul{
 /* Larger than tablet */
 @media (min-width: 750px) {
     .below-header{
-        padding-top:120px;
+        padding-top:100px;
     }
     .services{
         //max-width: 1200px;
@@ -629,17 +673,21 @@ nav ul{
     }
   .three.columns{
     width: 25%;
-    padding: 20px;
+    //padding: 20px;
   }
 
 }
 
 /* Larger than desktop */
 @media (min-width: 1025px) {
+
+  .employes{
+    padding: 10px 10px 10px 10px;
+  }
   .three.columns{
     width: 25%;
-    padding: 25px 80px 5px 80px;
-    margin-bottom: 20px;
+    //padding: 0px 30px 5px 30px;
+   // margin-bottom: 20px;
   }
 
   .instagram{

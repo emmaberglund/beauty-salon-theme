@@ -7,7 +7,7 @@
                     <?php dynamic_sidebar('Footer1'); ?>
                 </div>
                 <div class="one-third column footerparts">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/phone-booth3.png" class="contact-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/smartphone.png" class="contact-icon">
                     <?php dynamic_sidebar('Footer2'); ?>
                 </div>
                 <div class="one-third column footerparts">

@@ -18,25 +18,29 @@ if(have_posts()) :
         <main>
             <div class="container">
                 <div class="row below-header">
+                    <h5>Boka tid hos någon av vår personal</h5>
                     <div class="about-us">
                     <?php
                     $count = 1;
                     foreach ($pages as $page) {
                         ?>
                         <div class="three columns workers">
-                            <div class ="about-employee-img" style="background-image:url(<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($page->ID), 'medium')[0]; ?>);">
-                            </div>
+                            <div class="employes">
+
                             <p><?php echo $page->post_content; ?></p>
+                        </div>
                         </div>
 
 
                           <?php if($count % 4 == 0) {?>
                                 </div>
                                 <div class="row">
+                                <div class="about-us">
                           <?php }
                         $count++;
                     }
                     ?>
+                </div>
                 </div>
             </div>
         </main>

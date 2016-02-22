@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="header-image"><?php the_post_thumbnail(); ?></div>
+<div class="header-image"><h4></h4><?php the_post_thumbnail(); ?></div>
 <div class="container">
     <div class="row">
         <div class="three columns offer">

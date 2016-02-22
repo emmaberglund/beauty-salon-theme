@@ -38,14 +38,29 @@
   font-family: Dancing;
   src: url(../fonts/DancingScript-Regular.ttf); }
 
+@font-face {
+  font-family: Debby;
+  src: url(../fonts/Debby.ttf); }
+
+@font-face {
+  font-family: Abra;
+  src: url(../fonts/AbrahamLincoln.ttf); }
+
 .clear {
   content: " ";
   display: table;
   clear: both; }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: LANEAR;
   text-transform: uppercase; }
+
+h5 {
+  font-family: Abra, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 0px; }
 
 .header-text {
   padding-left: 10px;
@@ -60,13 +75,15 @@ h1, h2, h3, h4 {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  z-index: -1; }
 
 .header-image {
   height: 450px;
   width: 100%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
 
 body {
   background-color: #fff;
@@ -253,7 +270,7 @@ nav ul {
   .services .service {
     color: black;
     font-family: Gudea, sans-serif;
-    font-size: 16 px;
+    font-size: 16px;
     text-align: left;
     position: relative;
     transition: opacity 200ms ease-in-out;
@@ -291,7 +308,7 @@ nav ul {
 .contact {
   color: black;
   font-family: Gudea, sans-serif;
-  font-size: 16 px; }
+  font-size: 16px; }
   .contact p {
     text-align: left; }
   .contact .contact-map {
@@ -365,8 +382,15 @@ nav ul {
 
 /* ---- End Footer---- */
 /* ---- About---- */
+.about-us {
+  width: 85%;
+  display: block;
+  margin: auto; }
+
+.employes {
+  padding: 10px 10px 10px 10px; }
+
 .workers {
-  background: -webkit-radial-gradient(center, ellipse cover, #fcfff3 0%, #d2fce4 100%);
   padding: 8px 8px 0px 8px;
   margin-left: 0px;
   width: 50%; }
@@ -388,17 +412,24 @@ nav ul {
     margin-bottom: 0px;
     text-align: center; }
     .workers li:first-child {
-      font-size: 20px;
+      font-size: 17px;
       border-top: 2px solid #86e9e4;
-      padding-bottom: 5px; }
-    .workers li:last-child {
+      padding-bottom: 5px;
+      padding-top: 5px; }
+    .workers li:nth-child(2) {
       font-size: 15px; }
+    .workers li:last-child {
+      font-size: 14px; }
 
 h2 {
   padding-top: 20px;
   text-align: center; }
 
 /* ---- End About---- */
+@media (min-width: 330px) {
+  h5 {
+    font-size: 35px; } }
+
 /*MEDIA QUERIES */
 @media (min-width: 480px) {
   .instagram {
@@ -416,8 +447,7 @@ h2 {
   .offer {
     padding: 20px; }
   .three.columns {
-    width: 50%;
-    padding: 20px 30px 10px 30px; }
+    width: 50%; }
   .instagram {
     padding: 0px 20px 0px 20px; }
   .one-third.column {
@@ -426,22 +456,23 @@ h2 {
   .contact-intro {
     padding-bottom: 20px; }
   .below-header {
-    padding-top: 120px; }
-<<<<<<< HEAD
+    padding-top: 100px; }
   .two.columns {
-    width: 25%; } }
-=======
+    width: 25%; }
   .services .service {
     width: 50%;
     margin-left: 0; }
     .services .service .service-img {
-      height: 170px; } }
->>>>>>> 7f1718a4eec3d871d67dd33d3394777585b4d6f7
+      height: 170px; }
+  .employes {
+    padding: 10px 10px 10px 10px; }
+  h5 {
+    font-size: 52px; } }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   .below-header {
-    padding-top: 120px; }
+    padding-top: 100px; }
   .services {
     margin: 0 auto; }
     .services .service .service-img {
@@ -467,15 +498,14 @@ h2 {
   .show-menu {
     display: none; }
   .three.columns {
-    width: 25%;
-    padding: 20px; } }
+    width: 25%; } }
 
 /* Larger than desktop */
 @media (min-width: 1025px) {
+  .employes {
+    padding: 10px 10px 10px 10px; }
   .three.columns {
-    width: 25%;
-    padding: 25px 80px 5px 80px;
-    margin-bottom: 20px; }
+    width: 25%; }
   .instagram {
     padding: 0px 80px 0px 80px; }
   .one-third.column {
