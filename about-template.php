@@ -43,6 +43,11 @@ if(have_posts()) :
                 </div>
                 </div>
             </div>
+                <div class="row">
+                    <div class="twelve columns introduction">
+                        <?php dynamic_sidebar('Our Workers'); ?>
+                    </div>
+                </div>
         </main>
     <?php
     endwhile;
