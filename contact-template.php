@@ -23,20 +23,17 @@ get_header();
             ?>
         </div>
     </div>
-    <div class="row contact-info">
-        <div class="six columns">
+    <div class="row">
+        <div class="twelve columns">
             <?php dynamic_sidebar('Contact 1'); ?>
         </div>
+    </div>
+    <div class="row contact-info contact-form">
         <div class="six columns">
             <?php dynamic_sidebar('Contact 2'); ?>
         </div>
-    </div>
-    <div class="row contact-map">
-        <div class="six columns map">
-            <?php dynamic_sidebar('Contact Map'); ?>
-        </div>
-        <div class="six columns">
-            <h3>Kontakta oss gärna!</h3>
+        <div class="six columns form">
+            <h2>Kontakta oss gärna!</h2>
             <?php
             if(isset($_POST['submit'])) { $flag=1; if($_POST['yourname']=='') { $flag=0; echo "Skriv in ditt namn<br>"; }
             else if(!preg_match('/[a-zA-Z_x7f-xff][a-zA-Z0-9_x7f-xff]*/',$_POST['yourname'])) { $flag=0; echo "Skriv in ett giltigt namn<br>"; } if($_POST['email']=='') { $flag=0; echo "Skriv in din e-mail<br>"; }
@@ -48,14 +45,15 @@ get_header();
                 if($flag==1) {wp_mail(get_option("admin_email"),trim($_POST[yourname])." sent you a message from ".get_option("blogname"),stripslashes(trim($_POST[message])),"From: ".trim($_POST[yourname])." <".trim($_POST[email]).">rnReply-To:".trim($_POST[email])); echo "Ditt meddelande har skickats!"; } } } ?>
 
 
-                <form method="post" id="contactus_form"> <label>Namn:</label><input type="text" name="yourname" id="yourname" rows="1" value="">
-                    <label>E-post:</label><input type="text" name="email" id="email" rows="1" value="">
-                    <label>Ämne:</label><input type="text" name="subject" id="subject" rows="1" value="">
-                    <label>Meddelande:</label><textarea name="message" id="message"></textarea><br>
+                <form method="post" id="contactus_form"><input placeholder="Namn" type="text" name="yourname" id="yourname" rows="1" value="">
+                    <input placeholder="E-post" type="text" name="email" id="email" rows="1" value="">
+                    <input placeholder="Ämne" type="text" name="subject" id="subject" rows="1" value="">
+                    <textarea  placeholder="Meddelande" name="message" id="message"></textarea><br>
                     <input type="submit" name="submit" id="submit" value="Skicka">
                 </form>
         </div>
     </div>
+
 </div>
 
 <?php get_footer(); ?>

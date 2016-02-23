@@ -22,15 +22,8 @@ jQuery(function($) { // DOM is now read and ready to be manipulated
         }
     });
 
-    //$("#menu").hide();
-    /*$("#show-menu").click(function() {
-        $("#menu").slideToggle(500);
-    });*/
-
     $("#show-menu").click(function(){
         $("#menu ul").toggle(500);
     });
-
-
 
 });

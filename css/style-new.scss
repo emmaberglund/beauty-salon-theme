@@ -89,6 +89,7 @@ $lightgreen : #97ffe0;
 h1, h2, h3{
     font-family: LANEAR;
     text-transform: uppercase;
+    text-align: center;
 }
 h4{
   //font-family: Abra, sans-serif;
@@ -104,10 +105,14 @@ h5{
   margin-bottom: 0px;
 }
 
-.header-text{
-    padding-left:10px;
-    font-family: Dancing, sans-serif;
+h2.header-text{
+    font-family: Abra, sans-serif;
     text-transform: none;
+    text-align: center;
+    font-size: 5rem;
+    p{
+        text-align: center;
+    }
 }
 
 
@@ -391,7 +396,7 @@ header {
 .contact{
     @include p-text-small;
     p{
-        text-align: left;
+        text-align: center;
     }
     .contact-map{
         padding-top: 43px;
@@ -408,26 +413,38 @@ header {
     }
     .contact-info{
         background-color: #86e9cb;
-        padding-top: 27px;
+        padding: 27px 0;
         p{
             padding-left: 25px;
+            text-align: center;
+            color: white;
         }
     }
     h2{
         text-align: center;
         color: white;
     }
-    .contact-map{
+    .contact-form{
         form{
+            width: 300px;
             text-align: center;
+            margin: 0 auto;
             #submit{
-                background-color:$green;
-                color:white;
+                background-color:white;
+                color:$green;
+            }
+            input, textarea{
+                width: 100%;
+                font-family: LANEAR, sans-serif;
+
+            }
+            textarea{
+                margin-bottom: 5px;
             }
         }
-        h3{
+        h2{
             text-align: center;
-            color: $blue;
+            color: white;
         }
     }
 
@@ -585,9 +602,18 @@ header {
     width: 100%;
     margin-left: 0px;
   }
-  .contact-intro{
-      padding-bottom: 20px;
+  .contact{
+      .six.columns{
+          margin-left: 0;
+      }
+      .contact-intro{
+          padding-bottom: 20px;
+      }
+      .form form{
+          width: 250px;;
+      }
   }
+
 
   .below-header{
       padding-top: 100px;
@@ -723,6 +749,12 @@ header {
           .service-img{
               height: 230px;
           }
+      }
+  }
+
+  .contact{
+      .form form{
+          width: 425px;
       }
   }
 
