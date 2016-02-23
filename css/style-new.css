@@ -602,7 +602,8 @@ h2 {
       text-shadow: -1px -1px 0 #948C8C, 1px -1px 0 #7D7C7C, -1px 1px 0 #464444, 1px 1px 0 #212121;
       font-size: 5rem; }
       .header-image h3 p {
-        color: white; }
+        color: white;
+        margin-bottom: 0; }
   .employes {
     padding: 10px 10px 10px 10px; }
   .three.columns {
