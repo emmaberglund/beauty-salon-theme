@@ -22,5 +22,8 @@ jQuery(function($) { // DOM is now read and ready to be manipulated
         }
     });
 
+    $("#show-menu").click(function(){
+        $("#menu ul").toggle(500);
+    });
 
 });

@@ -61,7 +61,7 @@ if(have_posts()) :
                 <div class="row">
                     <div class="twelve columns">
                         <div class="instagramflow">
-                             
+
                         </div>
                     </div>
                 </div>

@@ -35,9 +35,17 @@
 
             <?php endif; ?>
 
-                <label for="show-menu" class="show-menu"><img src="<?php bloginfo('template_directory'); ?>/images/menu_button.png">
-                </label>
-                <input type="checkbox" id="show-menu" role="button">
+                <img id="show-menu" src="<?php bloginfo('template_directory'); ?>/images/menu_button.png">
+
+                <nav id="desktop-menu" class="main-nav">
+                    <?php wp_nav_menu([
+
+                    'theme_location' => 'primary'
+
+                ]); ?>
+
+
+                </nav>
 
                 <nav id="menu" class="main-nav">
                     <?php wp_nav_menu([
@@ -48,6 +56,10 @@
 
 
                 </nav>
+
+
+
+
 
 
 
