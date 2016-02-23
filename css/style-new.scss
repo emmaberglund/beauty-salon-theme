@@ -54,7 +54,26 @@
   font-family: Abra;
   src: url(../fonts/AbrahamLincoln.ttf);
 }
-
+@font-face {
+  font-family: Waterlily;
+  src: url(../fonts/Waterlily%20Script.otf);
+}
+@font-face {
+  font-family: AvenirNext;
+  src: url(../fonts/AvenirNext.otf);
+}
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir.otf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: Ruffle;
+  src: url(../fonts/Ruffle%20Beauty.otf);
+}
 
 .clear{
   content: " ";
@@ -71,37 +90,24 @@ $lightgreen : #97ffe0;
 
 @mixin p-text{
   color: black;
-  font-family: LANEAR, sans-serif;
+  font-family: OpenSans, sans-serif;
   font-size: 18px;
 }
 @mixin p-text-small{
   color: black;
-  font-family: Gudea, sans-serif;
-  font-size: 16px;
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
 }
 @mixin p-header-text{
   color: black;
-  font-family: LANEAR, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+  font-family: OpenSans, sans-serif;
+  font-size: 21px;
+  border-bottom: 1px solid $green;
 }
 
 h1, h2, h3{
-    font-family: LANEAR;
+    font-family: OpenSans;
     text-transform: uppercase;
-}
-h4{
-  //font-family: Abra, sans-serif;
-  //font-size: 40px;
-  //text-align: center;
-  //padding-top: 200px;
-}
-h5{
-  font-family: Abra, sans-serif;
-  font-size: 30px;
-  text-align: center;
-  padding: 5px 5px 5px 5px;
-  margin-bottom: 0px;
 }
 
 .header-text{
@@ -129,6 +135,7 @@ h5{
   overflow: hidden;
   position: relative;
   z-index: -1;
+  margin-bottom: 20px;
 }
 
 body{
@@ -219,6 +226,21 @@ nav ul{
             &:hover{
                 color:pink;
             }
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 24px;
+            height: 1px;
+            width: 0%;
+            left: 50%;
+            background-color: white;
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=78);
+            opacity: 0.78;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+          }
         }
 
     }
@@ -272,7 +294,7 @@ nav ul{
     color: white;
     font-size: 25px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     margin-bottom: 0px;
 
@@ -299,7 +321,14 @@ nav ul{
     padding: 5px;
   }
 }
-
+.social-media2{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  a{
+    padding: 5px;
+  }
+}
 .instagram{
   display: none;
   padding: 0px 20px 0px 20px;
@@ -459,10 +488,7 @@ nav ul{
   //background-color: rgba(134, 233, 224,1);
   .footer1{
     &:first-child {
-      padding: 0px 30px 0px 30px;
-      margin-top: 12px;
-      margin-bottom: -20px;
-
+      padding-bottom: 20px;
     }
   }
   .footer-header{
@@ -473,6 +499,7 @@ nav ul{
 
   }
   @include p-text;
+  margin-bottom: 0px;
   li{
     list-style: none;
     text-align: center;
@@ -483,6 +510,9 @@ nav ul{
     &:first-child {
       margin-top: 5px;
       margin-bottom: -28px;
+      p{
+        margin-bottom: 0px;
+      }
     }
   }
 }
@@ -553,6 +583,22 @@ nav ul{
     text-align: center;
   }
 
+
+.instagramflow{
+  ul{
+    display: inline-block;
+    width: 100%;
+
+  }
+  li{
+    width: 100%;
+    padding: 20px;
+    li{
+      width: 100px;
+    }
+  }
+
+}
 
 /* ---- End About---- */
 @media (min-width: 330px) {
