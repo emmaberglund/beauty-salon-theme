@@ -1,9 +1,22 @@
 <?php get_header(); ?>
 
+<?php
+    if(have_posts()) :
+        while (have_posts()) : the_post(); ?>
+
 <?php global $post; ?>
 <div class="header-image" style="background-image:url(<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'header')[0]; ?>);">
+    <h3><?php the_content();?></h3>
 </div>
+<?php
+    endwhile;
 
+else :
+    echo "No content available!";
+
+endif;
+
+?>
 
 <div class="container">
     <div class="row">
@@ -37,24 +50,7 @@
             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon-green.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/facebook-icon-black.png'" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/facebook-icon-green.png'" class="icons" alt="facebookIcon"></a>
         </div>
     </div>
-        <div class="twelve columns">
-            <?php
-                if(have_posts()) :
-                    while (have_posts()) : the_post(); ?>
 
-
-            <p><?php the_content();?></p>
-
-                <?php
-                    endwhile;
-
-                else :
-                    echo "No content available!";
-
-                endif;
-
-            ?>
-            </div>
         </div>
     </div>
 <?php get_footer(); ?>

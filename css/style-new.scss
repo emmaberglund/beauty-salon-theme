@@ -762,6 +762,24 @@ header {
 @media (min-width: 1025px) {
     .header-image{
         height: 580px;
+        h3{
+            font-family: OpenSans;
+            text-transform: none;
+            text-align: center;
+            z-index: 100;
+            position: absolute;
+            bottom: 8px;
+            left: 27px;
+            background: rgba(0, 0, 0, 0.26);
+            padding: 10px;
+            /* border-radius: 5px; */
+            color: white;
+            text-shadow: -1px -1px 0 #948C8C, 1px -1px 0 #7D7C7C, -1px 1px 0 #464444, 1px 1px 0 #212121;
+            font-size: 5rem;
+            p{
+                color: white;
+            }
+        }
     }
 
   .employes{
