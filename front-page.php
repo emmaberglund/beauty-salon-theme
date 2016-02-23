@@ -1,5 +1,10 @@
 <?php get_header(); ?>
-<div class="header-image"><h4></h4><?php the_post_thumbnail(); ?></div>
+
+<?php global $post; ?>
+<div class="header-image" style="background-image:url(<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'header')[0]; ?>);">
+</div>
+
+
 <div class="container">
     <div class="row">
         <div class="three columns offer">

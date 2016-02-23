@@ -135,12 +135,15 @@ h2.header-text{
 }
 
 .header-image{
-  height: 450px;
+  height: 281px;
   width: 100%;
   overflow: hidden;
   position: relative;
   z-index: -1;
+  background-position: center center;
+  background-size: cover;
   margin-bottom: 20px;
+
 }
 
 body{
@@ -718,6 +721,9 @@ header {
     .below-header{
         padding-top:100px;
     }
+    .header-image{
+        height: 450px;
+    }
     .services{
         //max-width: 1200px;
         margin: 0 auto;
@@ -777,6 +783,9 @@ header {
 
 /* Larger than desktop */
 @media (min-width: 1025px) {
+    .header-image{
+        height: 580px;
+    }
 
   .employes{
     padding: 10px 10px 10px 10px;
