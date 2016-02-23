@@ -151,6 +151,9 @@ header {
     //background: rgba(0, 0, 0, 0.66);
     background: black;
     z-index: 2;
+    #desktop-menu{
+        display: none;
+    }
     #logo {
         text-indent: -999rem;
         padding: 0;
@@ -165,46 +168,32 @@ header {
         transition: opacity 1s;
         -webkit-transition: opacity 1s;
         z-index: 2;
+        display: inline-block;
     }
     h1 {
-        float: left;
+        text-align: left;
     }
 }
 
 
-/*Hide checkbox*/
-input[type=checkbox]{
-   display: none;
 
+#show-menu{
+    top: 30px;
+    right: 22px;
+    position: absolute;
 }
-
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
-    //display: block;
-    opacity: 1;
-    height: auto;
-}
-
-#menu {
-    //display: none;
-    transition: opacity 1s ease-out;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-}
-
 
 
 .show-menu {
-    display: block;
+    display: none;
     text-align: right;
     padding-top: 25px;
     padding-right: 17px;
     vertical-align: middle;
 }
 
-nav ul{
-    margin-top: 20px;
+#menu ul{
+    display: none;
     list-style: none;
     padding-right: 20px;
     li{
@@ -646,23 +635,36 @@ nav ul{
     .contact-intro{
         padding-bottom:16px;
     }
+
+    #show-menu{
+        display: none;
+    }
+
     header{
-        #menu{
+        #desktop-menu{
             display: block;
             opacity: 1;
             height: auto;
             ul{
-                float:right;
-                margin: 0;
-                margin-top: 5px;
+                position: absolute;
+                right: 20px;
+                top: 5px;
                 li{
+                    font-family: lato, sans-serif;
+                    text-transform: uppercase;
                     display: inline-block;
                     float: left;
                     min-height: 1px;
                     vertical-align: middle;
-                    padding: 27px 5px;
+                    padding: 27px 13px;
                     margin-bottom: 0;
                     border-bottom: none;
+                    a{
+                        color: $text-color;;
+                        &:hover{
+                            color:pink;
+                        }
+                    }
 
                 }
             }

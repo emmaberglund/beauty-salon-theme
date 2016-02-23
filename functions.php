@@ -1,13 +1,4 @@
 <?php
-//adds new css-files
-function wpt_theme_styles(){
-    wp_enqueue_style( 'skeleton_css', get_template_directory_uri() . '/css/skeleton.css');
-    wp_enqueue_style( 'style-new', get_template_directory_uri() . '/css/style-new.css');
-
-}
-
-add_action('wp_enqueue_scripts', 'wpt_theme_styles' );
-
 
 function add_my_script() {
     wp_enqueue_script(
@@ -19,8 +10,21 @@ function add_my_script() {
 
 add_action( 'wp_enqueue_scripts', 'add_my_script' );
 
+//adds new css-files
 
-add_theme_support( 'post-thumbnails' ); 
+function wpt_theme_styles(){
+    wp_enqueue_style( 'skeleton_css', get_template_directory_uri() . '/css/skeleton.css');
+    wp_enqueue_style( 'style-new', get_template_directory_uri() . '/css/style-new.css');
+
+}
+
+add_action('wp_enqueue_scripts', 'wpt_theme_styles' );
+
+
+
+
+
+add_theme_support( 'post-thumbnails' );
 
 function our_widgets_init(){
     register_sidebar([
