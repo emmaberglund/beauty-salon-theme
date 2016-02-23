@@ -382,7 +382,7 @@ header {
           transition: opacity 200ms ease-in-out;
           -webkit-transition: opacity 200ms ease-in-out;
           padding: 20px;
-          border: 5px solid white;
+          border-bottom: 4px solid white;
           background-color: $pink;
 
         &:hover{
@@ -674,6 +674,24 @@ header {
       .service{
           width: 50%;
           margin-left: 0;
+          &:first-child{
+            border-right: 2px solid white;
+          }
+        &:nth-child(2){
+          border-left: 2px solid white;
+        }
+        &:nth-child(3){
+          border-right: 2px solid white;
+        }
+        &:nth-child(4){
+          border-left: 2px solid white;
+        }
+        &:nth-child(5){
+          border-right: 2px solid white;
+        }
+        &:nth-child(6){
+          border-left: 2px solid white;
+        }
           .service-img{
               height: 170px;
           }
@@ -685,6 +703,11 @@ header {
   }
   h5{
     font-size: 52px;
+  }
+
+  .six.columns{
+    margin-left: 0px;
+    width: 50%;
   }
 
 
@@ -791,6 +814,9 @@ header {
   .services{
       .service{
           width: 33.3333%;
+        &:nth-child(2){
+          border-right: 4px solid white;
+        }
 
           .service-img{
               height: 230px;
