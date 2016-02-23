@@ -46,22 +46,35 @@
   font-family: Abra;
   src: url(../fonts/AbrahamLincoln.ttf); }
 
+@font-face {
+  font-family: Waterlily;
+  src: url(../fonts/Waterlily%20Script.otf); }
+
+@font-face {
+  font-family: AvenirNext;
+  src: url(../fonts/AvenirNext.otf); }
+
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir.otf); }
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Light.ttf); }
+
+@font-face {
+  font-family: Ruffle;
+  src: url(../fonts/Ruffle%20Beauty.otf); }
+
 .clear {
   content: " ";
   display: table;
   clear: both; }
 
 h1, h2, h3 {
-  font-family: LANEAR;
+  font-family: OpenSans;
   text-transform: uppercase;
   text-align: center; }
-
-h5 {
-  font-family: Abra, sans-serif;
-  font-size: 30px;
-  text-align: center;
-  padding: 5px 5px 5px 5px;
-  margin-bottom: 0px; }
 
 h2.header-text {
   font-family: Abra, sans-serif;
@@ -89,7 +102,8 @@ h2.header-text {
   position: relative;
   z-index: -1;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 20px; }
 
 body {
   background-color: #fff;
@@ -152,6 +166,20 @@ header {
       color: #fff; }
       #menu ul li a:hover {
         color: pink; }
+      #menu ul li a::after {
+        content: "";
+        position: absolute;
+        bottom: 24px;
+        height: 1px;
+        width: 0%;
+        left: 50%;
+        background-color: white;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=78);
+        opacity: 0.78;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s; }
 
 /* ---- Offers ----*/
 .offer-picture {
@@ -165,14 +193,14 @@ header {
     height: 100%; }
   .offer .offer-header {
     color: black;
-    font-family: LANEAR, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: OpenSans, sans-serif;
+    font-size: 21px;
+    border-bottom: 1px solid #86e9cb;
     text-transform: uppercase;
     text-align: center; }
   .offer .offer-text {
     color: black;
-    font-family: LANEAR, sans-serif;
+    font-family: OpenSans, sans-serif;
     font-size: 18px;
     text-align: center; }
 
@@ -188,26 +216,26 @@ header {
     text-align: center;
     margin-bottom: 0px;
     color: black;
-    font-family: LANEAR, sans-serif;
+    font-family: OpenSans, sans-serif;
     font-size: 18px;
     color: white; }
   .introduction h2 {
     color: black;
-    font-family: LANEAR, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: OpenSans, sans-serif;
+    font-size: 21px;
+    border-bottom: 1px solid #86e9cb;
     text-transform: inherit;
     color: white;
     font-size: 25px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     margin-bottom: 0px; }
   .introduction .intro-header {
     color: black;
-    font-family: LANEAR, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: OpenSans, sans-serif;
+    font-size: 21px;
+    border-bottom: 1px solid #86e9cb;
     color: white;
     font-size: 25px; }
 
@@ -220,6 +248,13 @@ header {
   text-align: center;
   margin-top: 10px; }
   .social-media a {
+    padding: 5px; }
+
+.social-media2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+  .social-media2 a {
     padding: 5px; }
 
 .instagram {
@@ -268,8 +303,8 @@ header {
     padding-left: 10px; }
   .services .service {
     color: black;
-    font-family: Gudea, sans-serif;
-    font-size: 16px;
+    font-family: Avenir, sans-serif;
+    font-size: 18px;
     text-align: left;
     position: relative;
     transition: opacity 200ms ease-in-out;
@@ -306,8 +341,8 @@ header {
 
 .contact {
   color: black;
-  font-family: Gudea, sans-serif;
-  font-size: 16px; }
+  font-family: Avenir, sans-serif;
+  font-size: 18px; }
   .contact p {
     text-align: center; }
   .contact .contact-map {
@@ -348,22 +383,21 @@ header {
 .footer {
   background-color: rgba(151, 255, 224, 0.2);
   color: black;
-  font-family: LANEAR, sans-serif;
-  font-size: 18px; }
+  font-family: OpenSans, sans-serif;
+  font-size: 18px;
+  margin-bottom: 0px; }
   .footer img {
     display: block;
     margin: auto; }
   .footer a {
     color: black; }
   .footer .footer1:first-child {
-    padding: 0px 30px 0px 30px;
-    margin-top: 12px;
-    margin-bottom: -20px; }
+    padding-bottom: 20px; }
   .footer .footer-header {
     color: black;
-    font-family: LANEAR, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: OpenSans, sans-serif;
+    font-size: 21px;
+    border-bottom: 1px solid #86e9cb;
     text-transform: uppercase;
     margin-right: 300px; }
   .footer li {
@@ -373,6 +407,8 @@ header {
   .footer .footerparts:first-child {
     margin-top: 5px;
     margin-bottom: -28px; }
+    .footer .footerparts:first-child p {
+      margin-bottom: 0px; }
 
 .contact-icon {
   width: 47px;
@@ -410,12 +446,12 @@ header {
     margin-bottom: 5px;
     text-align: center;
     color: black;
-    font-family: LANEAR, sans-serif;
+    font-family: OpenSans, sans-serif;
     font-size: 18px; }
   .workers li {
     list-style: none;
     color: black;
-    font-family: LANEAR, sans-serif;
+    font-family: OpenSans, sans-serif;
     font-size: 18px;
     margin-bottom: 0px;
     text-align: center; }
@@ -432,6 +468,16 @@ header {
 h2 {
   padding-top: 20px;
   text-align: center; }
+
+.instagramflow ul {
+  display: inline-block;
+  width: 100%; }
+
+.instagramflow li {
+  width: 100%;
+  padding: 20px; }
+  .instagramflow li li {
+    width: 100px; }
 
 /* ---- End About---- */
 @media (min-width: 330px) {

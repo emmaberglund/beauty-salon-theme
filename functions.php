@@ -100,6 +100,11 @@ function our_widgets_init(){
         'id' => 'ourworkers',
         'class' => 'ourworkers'
     ]);
+    register_sidebar([
+        'name' => 'About Pictures',
+        'id' => 'aboutpictures',
+        'class' => 'aboutpictures'
+    ]);
 
 
 }
