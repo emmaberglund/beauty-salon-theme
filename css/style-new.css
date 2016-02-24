@@ -66,6 +66,10 @@
   font-family: Ruffle;
   src: url(../fonts/Ruffle%20Beauty.otf); }
 
+@font-face {
+  font-family: Glamor;
+  src: url(../fonts/Glamor-Regular.otf); }
+
 .clear {
   content: " ";
   display: table;
