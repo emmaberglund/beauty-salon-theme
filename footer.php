@@ -1,6 +1,7 @@
 <footer>
     <div class="row footer">
         <div class="six columns footer1">
+            <div class="overlay" onClick="style.pointerEvents='none'"></div>
             <?php dynamic_sidebar('FooterMap'); ?>
         </div>
 
