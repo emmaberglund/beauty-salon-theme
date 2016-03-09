@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Contact*/
+/* Template Name: Kontakt*/
 get_header();
 ?>
 <div class="container contact">
