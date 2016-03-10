@@ -250,7 +250,8 @@ register_nav_menus([
     add_theme_support('post-thumbnails');
     add_image_size('small_thumbnail', 180, 120, true);
     add_image_size('banner_image', 960, 320, true);
-    add_image_size( 'header', 1920, 250, true );
+    add_image_size( 'header', 2500, 1500, true );
+    add_image_size( 'services', 900, 700, true );
 
 // add new imagesize
 if ( function_exists( 'add_image_size' ) ) {

@@ -34,7 +34,7 @@ if(have_posts()) :
 
 
                         <div class="service four columns">
-                            <div class ="service-img" style="background-image:url(<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($page->ID), 'medium')[0]; ?>);">
+                            <div class ="service-img" style="background-image:url(<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($page->ID), 'services')[0]; ?>);">
                             </div>
                             <h2><?php echo $page->post_title; ?></h2>
                             <p><?php echo $page->post_content; ?></p>
